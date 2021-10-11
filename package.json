@@ -1,0 +1,15 @@
+{
+  "name": "04-bases-node",
+  "version": "1.0.0",
+  "description": "0.0.1",
+  "main": "Tabla de multiplicar simple con node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leonardo Guanuco",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.2.1"
+  }
+}
