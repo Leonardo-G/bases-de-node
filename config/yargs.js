@@ -2,7 +2,8 @@ const argv = require('yargs')
                 .option("b",{
                     alias: "base",
                     type: "number",
-                    demandOption: true
+                    demandOption: true,
+                    describe: "Es la base de la tabla de multiplicar"
                 })
                 .check( (argv, options) => {
                     if(isNaN(argv.b)){
@@ -11,16 +12,18 @@ const argv = require('yargs')
                     return true;
                 } )
                 .option("l", {
-                    file: "listar",
+                    alias: "listar",
                     type:"boolean",
                     demandOption: true,
-                    default: false
+                    default: false,
+                    describe: "Muestra la tabla en consola"
                 })
                 .option("h",{
-                    file: "hasta",
+                    alias: "hasta",
                     type: "number",
                     demandOption: true,
-                    default: 10
+                    default: 10,
+                    describe: "Este es el numero hasta donde quieres la tabla"
                 })
                 .check( (argv) => {
                     if(isNaN(argv.h)){
